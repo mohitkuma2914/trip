@@ -1,23 +1,20 @@
-package com.example.tripease;
+package com.example.tripease.dto.request;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import com.example.tripease.Enum.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-@Entity
-public class Customer {
-    @Id
-    private int customerId;
+public class CustomerRequest {
     private String name;
     private int age;
-    private String emailId;
-    private Gender gender;
 
+    private String emailId;
+
+    private Gender gender;
 }
