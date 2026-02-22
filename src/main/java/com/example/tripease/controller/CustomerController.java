@@ -34,7 +34,7 @@ public class CustomerController {
         return customerService.getByGenderAndAge(gender,age);
     }
     @GetMapping("/gender-greater-age")
-    public List<CustomerResponse> getAllByGenderAndGreaterBy(@RequestParam("gender") Gender gender,
+    public List<CustomerResponse> getAllByGenderAndGreaterBy(@RequestParam("gender") String gender,
                                                              @RequestParam("age") int age){
     return customerService.getAllByGenderAndGreaterBy(gender,age);
     }

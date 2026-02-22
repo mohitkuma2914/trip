@@ -58,7 +58,7 @@ public class CustomerService {
 
     }
 
-    public List<CustomerResponse> getAllByGenderAndGreaterBy(Gender gender, int age) {
+    public List<CustomerResponse> getAllByGenderAndGreaterBy(String gender, int age) {
         List<Customer> customers=customerRepository.getAllByGenderAndGreaterBy(gender,age);
 
         List<CustomerResponse> customerResponses = new ArrayList<>();

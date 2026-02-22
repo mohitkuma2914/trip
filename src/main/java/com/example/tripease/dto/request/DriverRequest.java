@@ -10,11 +10,10 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class CustomerRequest {
+public class DriverRequest {
+
     private String name;
     private int age;
-
     private String emailId;
-
 
 }
